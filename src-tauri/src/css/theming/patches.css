@@ -130,10 +130,10 @@ img {
 	background: var(--theme--scrollbar_track) !important;
 }
 ::-webkit-scrollbar-thumb {
-	background: var(--theme--scrollbar_thumb) !important;
+	background: rgba(var(--theme--scrollbar_thumb), 1) !important;
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--theme--scrollbar_thumb-hover) !important;
+	background: rgba(var(--theme--scrollbar_thumb-hover), 1) !important;
 }
 
 /** consistent corner button styling **/

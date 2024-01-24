@@ -48,16 +48,16 @@ body,
 .notion-update-sidebar-tab-comments-header,
 .notion-update-sidebar-tab-comments-header + div,
 .notion-code-block > div > div > [style*='background: '][style$='padding-right: 105px;'] {
-	background: var(--theme--bg) !important;
+	background: rgba(var(--theme--bg), 1) !important;
 }
 .notion-timeline-item-row + div > div > div,
 .notion-timeline-view > :nth-child(2) > :first-child > div > div {
-	border: 1px solid var(--theme--bg) !important;
-	background: var(--theme--ui_toggle-off) !important;
+	border: 1px solid rgba(var(--theme--bg), 1) !important;
+	background: rgba(var(--theme--ui_toggle-off), 1) !important;
 }
 .notion-timeline-item-row + div > div > div svg,
 .notion-timeline-view > :nth-child(2) > :first-child > div > div svg {
-	fill: var(--theme--bg) !important;
+	fill: rgba(var(--theme--bg), 1) !important;
 }
 
 .notion-sidebar-container,
@@ -111,7 +111,7 @@ td[style*='background:']:not([style*='background: transparent']),
 .notion-whimsical-block .pseudoSelection,
 .notion-equation-block > div > div,
 .notion-factory-block > div > div > div > div > [style*='background'][style*='margin-top'] {
-	background: var(--theme--bg_secondary) !important;
+	background: rgba(var(--theme--bg_secondary), 1) !important;
 }
 
 .notion-default-overlay-container
@@ -160,7 +160,7 @@ footer
 .notion-workspace-create
 [style*='font-size: 12px;']
 + .notion-focusable[role='button']:not(:hover) {
-	background: var(--theme--bg_card) !important;
+	background: rgba(var(--theme--bg_card), 1) !important;
 	box-shadow: var(--theme--ui_shadow, rgba(15, 15, 15, 0.05)) 0px 0px 0px 1px,
 	var(--theme--ui_shadow, rgba(15, 15, 15, 0.1)) 0px 3px 6px,
 	var(--theme--ui_shadow, rgba(15, 15, 15, 0.2)) 0px 9px 24px !important;
@@ -173,7 +173,7 @@ footer
 .notion-calendar-view
 .notion-selectable.notion-page-block.notion-collection-item
 > a[style*='background:'] {
-	background: var(--theme--bg_card) !important;
+	background: rgba(var(--theme--bg_card), 1) !important;
 	box-shadow: var(--theme--ui_shadow, rgba(15, 15, 15, 0.05)) 0px 0px 0px 1px,
 	var(--theme--ui_shadow, rgba(15, 15, 15, 0.1)) 0px 2px 4px !important;
 }
@@ -190,7 +190,7 @@ footer
 .notion-focusable[style*='background: white;'],
 .notion-timeline-item,
 .notion-collection-item > a {
-	background: var(--theme--bg_card) !important;
+	background: rgba(var(--theme--bg_card), 1) !important;
 }
 
 .notion-timeline-view
@@ -199,7 +199,7 @@ footer
 > [style*='height: 100%; background-image: linear-gradient(to right, '] {
 	background-image: linear-gradient(
 			to right,
-			var(--theme--bg) 20%,
+			rgba(var(--theme--bg), 1) 20%,
 			transparent 100%
 	) !important;
 }
@@ -209,7 +209,7 @@ footer
 > [style*='height: 100%; background-image: linear-gradient(to left, '] {
 	background-image: linear-gradient(
 			to left,
-			var(--theme--bg) 20%,
+			rgba(var(--theme--bg), 1) 20%,
 			transparent 100%
 	) !important;
 }
@@ -217,8 +217,8 @@ footer
 /** ui **/
 
 .notion-page-mention-token.notion-enable-hover:hover {
-	box-shadow: 0 0 0 3px var(--theme--ui_interactive-hover) !important;
-	background: var(--theme--ui_interactive-hover) !important;
+	box-shadow: 0 0 0 3px rgba(var(--theme--ui_interactive-hover), 1) !important;
+	background: rgba(var(--theme--ui_interactive-hover), 1) !important;
 }
 
 .notion-to_do-block [style*='background: rgb(46, 170, 220);'],
@@ -233,7 +233,7 @@ footer
 .notion-body:not(.dark)
 .notion-focusable
 > [style*='border-radius: 44px;'][style*='background: rgba(135, 131, 120, 0.3);'] {
-	background: var(--theme--ui_toggle-off) !important;
+	background: rgba(var(--theme--ui_toggle-off), 1) !important;
 }
 
 .notion-focusable
@@ -258,7 +258,7 @@ footer
 [style*='grid-template-columns: [boolean-start] 60px [boolean-end property-start] 120px [property-end opererator-start] 110px [operator-end value-start] auto [value-end menu-start] 32px [menu-end];']
 .notion-focusable[style*='background: rgb(239, 239, 238);'],
 .line-numbers.notion-code-block + div .notion-focusable:hover {
-	background: var(--theme--ui_interactive-hover) !important;
+	background: rgba(var(--theme--ui_interactive-hover), 1) !important;
 	color: var(--theme--text) !important;
 	fill: var(--theme--text) !important;
 }
@@ -708,6 +708,10 @@ svg
 	color: var(--theme--text_secondary) !important;
 }
 
+.notion-selectable.notion-collection_view-block > div[style*='box-shadow: rgb(47, 47, 47) 0px -1px 0px inset;'] {
+	box-shadow: var(--theme--ui_divider) 0px -1px 0px inset !important;
+}
+
 .notion-page-mention-token__title {
 	border-bottom: 0.05em solid var(--theme--text_secondary) !important;
 }
@@ -758,7 +762,7 @@ svg
 .notion-table-row-selector,
 .notion-table-column-selector,
 .notion-table-block .notion-focusable [style*='background: rgba(55, 53, 47, 0.06);'] {
-	background: var(--theme--ui_interactive-hover) !important;
+	background: rgba(var(--theme--ui_interactive-hover), 1) !important;
 }
 .notion-table-row [style*='background: rgb(116, 182, 219);'],
 .notion-table-row-selector[style*='background: rgb(116, 182, 219);'],
@@ -767,5 +771,5 @@ svg
 	background: var(--theme--accent_blue) !important;
 }
 .notion-table-row td[style*='background:'] {
-	background: var(--theme--bg_secondary) !important;
+	background: rgba(var(--theme--bg_secondary), 1) !important;
 }
